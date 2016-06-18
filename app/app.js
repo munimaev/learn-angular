@@ -57,14 +57,14 @@ angular.module('myapp', ['ui.router','ngSanitize'])
             emailsCacheService : 'emailsCacheService'
           },
           controller: function( resGetEmails, $stateParams, emailsCacheService){
-            this.emails = resGetEmails.data.filter((m)=>{return m.box == 'inbox'});
-            this.emails.sort((a,b)=>{return a.date>b.date});
+            this.emails = resGetEmails.data.filter(function(m){return m.box == 'inbox'});
+            this.emails.sort(function(a,b){return a.date>b.date});
             this.content = null;
+            var self = this;
             if ($stateParams.eid) {
               this.content = 'lodaing';
-              emailsCacheService.getMailOnId().then((res) => {this.content = res});
+              emailsCacheService.getMailOnId().then(function(res) {self.content = res});
             }
-            console.log('content' ,this.content)
           },
           controllerAs : '$ctrl'
         })
@@ -124,8 +124,8 @@ angular.module('myapp', ['ui.router','ngSanitize'])
         params: {
           name: id
         }
-      }).then((res) => {
-        return  res.data.filter((m)=>{return m.key == id})[0]; 
+      }).then(function(res) {
+        return  res.data.filter(function(m){return m.key == id})[0]; 
       });
       return cache[id];
     }
