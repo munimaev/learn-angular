@@ -1,0 +1,42 @@
+<!-- CONTENT MAIL -->
+<div class="col-sm-9 mail_view">
+  <div class="inbox-body">
+    <div class="mail_heading row">
+      <div class="col-md-8">
+        <div class="btn-group">
+          <button class="btn btn-sm btn-primary" type="button"><i class="fa fa-reply"></i> Reply</button>
+          <button class="btn btn-sm btn-default" type="button" data-placement="top" data-toggle="tooltip" data-original-title="Forward"><i class="fa fa-share"></i></button>
+          <button class="btn btn-sm btn-default" type="button" data-placement="top" data-toggle="tooltip" data-original-title="Print"><i class="fa fa-print"></i></button>
+          <button class="btn btn-sm btn-default" type="button" data-placement="top" data-toggle="tooltip" data-original-title="Trash"><i class="fa fa-trash-o"></i></button>
+        </div>
+      </div>
+      <div class="col-md-4 text-right">
+        <p class="date"> 8:02 PM 12 FEB 2014</p>
+      </div>
+      <div class="col-md-12">
+        <h4> {{$ctrl.content.subject}}</h4>
+      </div>
+    </div>
+    <div class="sender-info">
+      <div class="row">
+        <div class="col-md-12">
+          <strong>{{$ctrl.content.name}}</strong>
+          <span>({{$ctrl.content.email}})</span> to
+          <strong>me</strong>
+          <!-- <a class="sender-dropdown"><i class="fa fa-chevron-down"></i></a> -->
+        </div>
+      </div>
+    </div>
+    <div class="view-mail"  ng-bind-html="$ctrl.content.html">
+      
+    </div>
+    <div class="btn-group">
+      <button class="btn btn-sm btn-primary" type="button"><i class="fa fa-reply"></i> Reply</button>
+      <button class="btn btn-sm btn-default" type="button" data-placement="top" data-toggle="tooltip" data-original-title="Forward"><i class="fa fa-share"></i></button>
+      <button class="btn btn-sm btn-default" type="button" data-placement="top" data-toggle="tooltip" data-original-title="Print"><i class="fa fa-print"></i></button>
+      <button class="btn btn-sm btn-default" type="button" data-placement="top" data-toggle="tooltip" data-original-title="Trash"><i class="fa fa-trash-o"></i></button>
+    </div>
+  </div>
+
+</div>
+<!-- /CONTENT MAIL -->
