@@ -289,7 +289,7 @@ angular.module('myapp', ['ui.router','ngSanitize'])
   return {
     logIn: function(credential) {
       return $http
-        .post('api/autorization.txt', credential)
+        .get('api/autorization.txt', credential)
         .then(function(res) {
           var resArr = res.data.split(':');
           Session.create(credential.username, resArr[0], resArr[1], resArr[2]);
