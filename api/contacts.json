@@ -1,0 +1,73 @@
+[{
+	"firstName" : "Frodo",
+	"lastName" : "Baggins",
+	"profession" : "Bearer of the One Ring",
+	"address" : "Shire",
+	"race" : "Hobbit",
+	"rating": 5,
+	"skills" : [9,8,9,12,10,6]
+},{
+	"firstName" : "Samwise",
+	"lastName" : "Gamgee",
+	"profession" : "Gardener of the Bagginses",
+	"address" : "Shire",
+	"race" : "Hobbit",
+	"rating": 3,
+	"skills" : [9,9,6,8,10,12]
+},{
+	"firstName" : "Meriadoc",
+	"lastName" : "Brandybuck",
+	"profession" : "Frodo's cousin",
+	"address" : "Shire",
+	"race" : "Hobbit",
+	"rating": 3,
+	"skills" : [12,9,8,6,10,9]
+},{
+	"firstName" : "Peregrin",
+	"lastName" : "Took",
+	"profession" : "Frodo's cousin",
+	"address" : "Shire",
+	"race" : "Hobbit",
+	"rating": 3,
+	"skills" : [6,12,8,9,8,10]
+},{
+	"firstName" : "Gendalf",
+	"lastName" : "the Grey",
+	"profession" : "Wizard",
+	"address" : "",
+	"race" : "Maia",
+	"rating": 6,
+	"skills" : [9,7,7,16,13,10]
+},{
+	"firstName" : "Aragorn",
+	"lastName" : "son of Arathorn",
+	"profession" : "Descendant of Isildur ",
+	"address" : "Gondor",
+	"race" : "Men",
+	"rating": 3,
+	"skills" : [17,13,11,12,7,11]
+},{
+	"firstName" : "Legolas",
+	"lastName" : "Greenleaf",
+	"profession" : "Elf prince",
+	"address" : "Northern Mirkwood",
+	"race" : "Elf",
+	"rating": 3,
+	"skills" : [12,13,10,9,7,8]
+},{
+	"firstName" : "Gimli",
+	"lastName" : "son of Glóin",
+	"profession" : "Elf-friend",
+	"address" : "Lord of the Glittering Caves",
+	"race" : "Dwarf",
+	"rating": 4,
+	"skills" : [14,6,10,10,15,11]
+},{
+	"firstName" : "Boromir",
+	"lastName" : "",
+	"profession" : "The eldest son and heir of Denethor",
+	"address" : "Gondor",
+	"race" : "Men",
+	"rating": 2,
+	"skills" : [12,10,9,11,10,12]
+}]
